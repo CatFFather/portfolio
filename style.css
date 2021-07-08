@@ -1,1 +1,66 @@
-/* font-family: 'Open Sans', sans-serif;  */
+/* html , body */
+html{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif; 
+}
+body{
+  margin: 0px;
+  height: 100%;
+}
+/* a태그 밑줄x, 스크롤바 삭제 */
+a:link { text-decoration: none;}
+/* ::-webkit-scrollbar{ display:none; } */
+
+
+/* header nav bar 항상 고정 */
+nav{
+  width: calc(100% - 30px); /* width를 100%로 하면 양쪽 padding값 만큼 튀어나옴(position: fixed 때문)*/
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 15px;
+  background-color: gray;
+}
+/* nav 왼쪽 (이미지, 닉네임) */
+nav div {
+    display: flex;
+    align-items: center;
+}
+nav div img{
+    height: 70px;
+}
+nav div span{
+    font-size: 26px;
+    color: white;
+}
+
+/* nav 오른쪽 (메뉴) */
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type : none;
+    padding: 0px;
+}
+nav ul a{
+    margin: 0 10px;
+    padding: 7px;
+    font-size: 20px;
+    border: white solid 1px;
+    border-radius: 5px;
+}
+nav ul a:visited {
+    color: white;
+}
+
+/* main */
+main{
+    height: calc(100% - 80px); /* 여기서 -80px은 header nav bar의 height + 위,아래 padding값임 */
+    overflow-y: scroll;
+    padding-top: 80px;
+}
+main section{
+    height: 1000px;
+}
+
