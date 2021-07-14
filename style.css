@@ -65,15 +65,13 @@ main{
 /* main --> home  */
 .home{
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     background-color: #8c8d8f;
 }
 .home__img{
     margin: 20px 0px;
-    width: 400px;
-    /* height: 400px; */
+    width: 360px;
 }
 .home__title{
     font-size: 46px;
@@ -85,8 +83,7 @@ main{
     font-size: 30px;
     color: white;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin: 10px 0px;
 }
 .home__a{
     /* margin: 20px 0px; */
@@ -95,6 +92,7 @@ main{
     color: white;
     border: white solid 1px;
     border-radius: 5px;
+    margin-top: 10px;
     margin-bottom: 40px;
 }
 
