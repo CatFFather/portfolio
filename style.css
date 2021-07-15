@@ -64,6 +64,7 @@ main{
 }
 /* main --> home  */
 .home{
+    padding: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -87,13 +88,111 @@ main{
 }
 .home__a{
     /* margin: 20px 0px; */
-    padding: 7px;
-    font-size: 26px;
+    padding: 10px;
+    font-size: 22px;
     color: white;
     border: white solid 1px;
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 40px;
+}
+
+/* main --> about  */
+.about{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about__title{
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.about__contents{
+    font-size: 18px;
+    /* color: white; */
+    text-align: center;
+    margin: 0px;
+}
+
+/* main --> skills  */
+.skills{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff6cb;
+}
+.skills__title{
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.skills__contents{
+    font-size: 18px;
+    /* color: white; */
+    text-align: center;
+    margin: 0px;
+}
+.skills__level{
+    color: white;
+    margin: 40px;
+    width: calc(100%);
+    display: flex;
+    /* justify-content: space-between; */
+}
+.skills__level--skills{
+    width: calc(60% - 40px);
+    padding: 20px;
+    background-color: #444444;
+}
+.skills__level--label{
+    display: flex;
+    justify-content: space-between;
+}
+.skills__level--title{
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.skills__level--name{
+    font-size: 16px;
+}
+.skills__level--percent{
+    font-size: 16px;
+}
+.skills__level__border--yellow{
+    width: 50%;
+    border: solid 1px #feac3e;
+}
+.skills__level__border--white{
+    width: 100%;
+    border: solid 1px #565656;
+}
+.skills__level--tools{
+    width:40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.skills__level--tools--tool{
+    width: calc(100% - 40px);
+    padding: 20px;
+    background-color: #565656;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.skills__level--tools--etc{
+    width: calc(100% - 40px);
+    padding: 20px;
+    background-color: #706f6d;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 
