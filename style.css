@@ -58,13 +58,21 @@ nav ul a:visited {
 
 /* main */
 main{
-    height: calc(100% - 80px); /* 여기서 -80px은 header nav bar의 height + 위,아래 padding값임 */
+    /* height: calc(100% - 80px); 여기서 -80px은 header nav bar의 height + 위,아래 padding값임 */
+    /* padding-top: 80px; */
     overflow-y: scroll;
-    padding-top: 80px;
 }
-/* main --> home  */
+/* 공통 타이틀 */
+main .title{
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* home */
 .home{
-    padding: 20px;
+    padding: 100px 20px 20px 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -80,7 +88,7 @@ main{
     text-align: center;
     margin: 10px 0px;
 }
-.home__title--sub{
+.home__title__sub{
     font-size: 30px;
     color: white;
     text-align: center;
@@ -97,102 +105,120 @@ main{
     margin-bottom: 40px;
 }
 
-/* main --> about  */
+/* about */
 .about{
-    padding: 20px;
+    padding: 100px 20px 20px 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.about__title{
-    font-size: 46px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 .about__contents{
     font-size: 18px;
-    /* color: white; */
     text-align: center;
     margin: 0px;
 }
 
-/* main --> skills  */
+/* skills */
 .skills{
-    padding: 20px;
+    padding: 100px 20px 20px 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: #fff6cb;
 }
-.skills__title{
-    font-size: 46px;
-    font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
 .skills__contents{
     font-size: 18px;
-    /* color: white; */
     text-align: center;
-    margin: 0px;
+    margin: 0px auto;
+    max-width: 1092px;
 }
-.skills__level{
+.skills__wrap{
     color: white;
-    margin: 40px;
-    width: calc(100%);
+    margin: 40px auto;
+    width: 100%;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: center;
+    max-width: 1092px;
 }
-.skills__level--skills{
+.skills__level__skills{
     width: calc(60% - 40px);
     padding: 20px;
     background-color: #444444;
 }
-.skills__level--label{
+.skills__level__itemsWrap{
+    margin-bottom: 20px;
+}
+.skills__level__label{
     display: flex;
     justify-content: space-between;
 }
-.skills__level--title{
+.skills__level__title{
     font-size: 18px;
     margin-bottom: 15px;
     text-align: center;
 }
-.skills__level--name{
+.skills__level__name{
     font-size: 16px;
 }
-.skills__level--percent{
+.skills__level__percent{
     font-size: 16px;
 }
 .skills__level__border--yellow{
-    width: 50%;
+    width: 90%;
     border: solid 1px #feac3e;
+    background-color: #feac3e;
 }
 .skills__level__border--white{
     width: 100%;
     border: solid 1px #565656;
+    background-color: #565656;
 }
-.skills__level--tools{
+.skills__tools{
     width:40%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.skills__level--tools--tool{
+.skills__tools--tool{
     width: calc(100% - 40px);
+    height: 50%;
     padding: 20px;
     background-color: #565656;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.skills__level--tools--etc{
+.skills__tools--etc{
     width: calc(100% - 40px);
+    height: 50%;
     padding: 20px;
     background-color: #706f6d;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+/* main --> project  */
+.project{
+    padding: 100px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* main --> testimonial  */
+.testimonial{
+    padding: 100px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* main --> contact  */
+.contact{
+    padding: 100px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
 }
 
 
