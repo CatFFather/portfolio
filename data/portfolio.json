@@ -1,0 +1,62 @@
+{
+    "skills":[
+        {
+            "type" : "skill",
+            "name" : "HTML",
+            "percent" :90
+        },
+        {
+            "type" : "skill",
+            "name" : "CSS",
+            "percent" :80
+        },
+        {
+            "type" : "skill",
+            "name" : "JavaScript",
+            "percent" :80
+        },
+        {
+            "type" : "skill",
+            "name" : "React",
+            "percent" :80
+        },
+        {
+            "type" : "skill",
+            "name" : "Vue.js",
+            "percent" :75
+        },
+        {
+            "type" : "skill",
+            "name" : "Java",
+            "percent" :60
+        },
+        {
+            "type" : "tool",
+            "name" : "Visual Studio"
+        },
+        {
+            "type" : "tool",
+            "name" : "Spring"
+        },
+        {
+            "type" : "tool",
+            "name" : "MariaDB"
+        },
+        {
+            "type" : "etc",
+            "name" : "Figma"
+        },
+        {
+            "type" : "etc",
+            "name" : "Notion"
+        },
+        {
+            "type" : "etc",
+            "name" : "Slack"
+        },
+        {
+            "type" : "etc",
+            "name" : "Git"
+        }
+    ]
+}

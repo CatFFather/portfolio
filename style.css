@@ -2,6 +2,8 @@
 html{
     height: 100%;
     font-family: 'Open Sans', sans-serif; 
+    scroll-behavior: smooth; 
+
 }
 body{
   margin: 0px;
@@ -140,35 +142,37 @@ main .title{
     justify-content: center;
     max-width: 1092px;
 }
-.skills__level__skills{
+.skills__skills{
     width: calc(60% - 40px);
     padding: 20px;
     background-color: #444444;
 }
-.skills__level__itemsWrap{
+.skills__itemsWrap{
     margin-bottom: 20px;
 }
-.skills__level__label{
+.skills__label{
     display: flex;
     justify-content: space-between;
 }
-.skills__level__title{
+.skills__title{
     font-size: 18px;
     margin-bottom: 15px;
     text-align: center;
 }
-.skills__level__name{
+.skills__name{
     font-size: 16px;
+    margin-bottom: 5px;
 }
-.skills__level__percent{
+.skills__percent{
     font-size: 16px;
+    margin-bottom: 5px;
 }
-.skills__level__border--yellow{
+.skills__border--yellow{
     width: 90%;
     border: solid 1px #feac3e;
     background-color: #feac3e;
 }
-.skills__level__border--white{
+.skills__border--white{
     width: 100%;
     border: solid 1px #565656;
     background-color: #565656;
