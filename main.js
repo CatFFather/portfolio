@@ -7,10 +7,7 @@ function getSkillsList(){
         return response.json();
     })
     .then(function(myJson) {
-        console.log(myJson)
-        // console.log(JSON.stringify(myJson));
-        // console.log(myJson.skills)
-        return myJson.skills
+        return myJson.skills // 최종 return 값 
     });
 }
 getSkillsList().then((result)=>{
