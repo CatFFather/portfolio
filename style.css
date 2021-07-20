@@ -225,6 +225,7 @@ main .title{
     align-items: center;
     flex-direction: column;
     background-color: #8c8d8f; 
+    min-height: 0px; /* <-- 지울 예정*/
 }
 .contact__title{
     color: white;
@@ -258,6 +259,7 @@ main .title{
 }
 
 
+/* 지울 예정 */
 main section{
     min-height: 700px;
 }
