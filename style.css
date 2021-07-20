@@ -19,34 +19,42 @@ nav{
   width: calc(100% - 30px); /* width를 100%로 하면 양쪽 padding값 만큼 튀어나옴(position: fixed 때문)*/
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 50px;
   padding: 15px;
   background-color: #8c8d8f;
 }
-/* nav 왼쪽 (이미지, 닉네임) */
-nav div {
+nav div{
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    max-width: 1092px;
+}
+/* nav 왼쪽 (이미지, 닉네임) */
+nav div div {
+    display: flex;
+    justify-content: start;
     align-items: center;
 }
-nav div img{
+nav div div img{
     height: 70px;
     /* width: 80px; */
 }
-nav div span{
+nav div div span{
     font-size: 22px;
     color: white;
 }
 
 /* nav 오른쪽 (메뉴) */
-nav ul{
+nav div ul{
     display: flex;
     align-items: center;
     list-style-type : none;
     padding: 0px;
 }
-nav ul a{
+nav div ul a{
     margin: 0 10px;
     padding: 7px;
     font-size: 16px;
@@ -54,7 +62,7 @@ nav ul a{
     border: white solid 1px;
     border-radius: 5px;
 }
-nav ul a:visited {
+nav div ul a:visited {
     color: white;
 }
 
