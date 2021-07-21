@@ -131,24 +131,25 @@ main .title{
     max-width: 1150px;
     margin-bottom: 25px;
 }
+.about__careers{
+    border: #8c8d8f 1px solid;
+    border-radius: 15px;
+    width: 100%;
+    margin: 0px auto;
+    max-width: 1110px;
+    padding: 20px 20px 0px 20px;
+}
 .about__career__wrap{
     display: flex;
     align-items: center;
     margin: 0px auto;
-    width: 1150px;
+    max-width: 1150px;
     margin-bottom: 20px;
 }
 .about__career__img{
     margin-right: 20px;
 }
 
-.about__careers{
-    border: #8c8d8f 1px solid;
-    border-radius: 15px;
-    margin: 0px auto;
-    width: 1110px;
-    padding: 20px 20px 0px 20px;
-}
 .about__career__infoWrap{
     display: flex;
     flex-direction: column;

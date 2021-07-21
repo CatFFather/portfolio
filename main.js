@@ -16,7 +16,6 @@ getCareerList().then((careers)=>{
         let about__career__wrap = document.createElement('div')
         about__career__wrap.classList.add('about__career__wrap')
         about__career__wrap.innerHTML = `
-        <div class="about__career__wrap">
             <div class="about__career__img">
                 <a href="${career.href}"><img width="150px" src="${career.logo}"/></a>
             </div>
@@ -24,7 +23,6 @@ getCareerList().then((careers)=>{
                 <div class="about__career__info">${career.info}</div>
                 <div class="about__career__term">${career.term}</div>
             </div>
-        </div>
         `
         about__career.appendChild(about__career__wrap)
     })
