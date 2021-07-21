@@ -1,3 +1,34 @@
+// career List 가져오기 
+function getCareerList(){
+    // 함수의 return 값을 fetch로 얻은 값으로 해준다.
+    return fetch('./data/portfolio.json')
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(myJson) {
+        return myJson.careers // 최종 return 값 
+    });
+}
+getCareerList().then((careers)=>{
+    console.log(careers)
+    let about__career = document.querySelector('.about__careers')
+    careers.forEach((career,index)=>{
+        let about__career__wrap = document.createElement('div')
+        about__career__wrap.classList.add('about__career__wrap')
+        about__career__wrap.innerHTML = `
+        <div class="about__career__wrap">
+            <div class="about__career__img">
+                <a href="${career.href}"><img width="150px" src="${career.logo}"/></a>
+            </div>
+            <div class="about__career__infoWrap">
+                <div class="about__career__info">${career.info}</div>
+                <div class="about__career__term">${career.term}</div>
+            </div>
+        </div>
+        `
+        about__career.appendChild(about__career__wrap)
+    })
+})
 
 // Skills List 가져오기 
 function getSkillsList(){

@@ -1,4 +1,9 @@
 {
+    "careers":[
+        {"logo" : "./imgs/logo_ICIA.png", "href" : "https://www.icia.co.kr/", "info" : "JS 프레임워크를 활용한 반응형 웹 UI 개발자 양성과정 수료", "term" : "2020.05.01 ~ 2020.10.29"},
+        {"logo" : "./imgs/logo_delphicom.png", "href" : "http://www.delphicom.net/", "info" : "델피콤㈜ 신입 사원으로 입사", "term" : "2020.11.02 ~ 현재"}
+    ],
+
     "skills":[
         {"type" : "skill", "name" : "HTML", "percent" : 90},
         {"type" : "skill", "name" : "CSS",  "percent" : 80},
