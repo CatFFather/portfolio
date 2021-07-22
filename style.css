@@ -42,7 +42,7 @@ nav div div img{
     height: 70px;
     /* width: 80px; */
 }
-nav div div span{
+nav div div a{
     font-size: 22px;
     color: white;
 }
@@ -122,28 +122,51 @@ main .title{
     display: flex;
     /* align-items: center; */
     flex-direction: column;
-    min-height: 0px; /* <-- 지울 예정*/
+    margin: 0px auto;   /* about은 전체를 가운대 정렬함 */
+    max-width: 1150px;
 }
 .about__contents{
     font-size: 18px;
     /* text-align: center; */
-    margin: 0px auto;
-    max-width: 1150px;
     margin-bottom: 25px;
 }
+
+.about__mySkills__wrap{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px;
+}
+.about__mySkill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__icon{
+    color: #69a0c7;
+    font-size: 80px;
+    border: #69a0c7 solid 2px ;
+    border-radius: 50%;
+    padding: 50px;
+}
+.about__mySkill__title{
+    margin: 10px 0px;
+    font-size: 30px;
+}
+.about__mySkill__info{
+    margin: 10px 0px;
+    font-size: 18px;
+}
+
 .about__careers{
     border: #8c8d8f 1px solid;
     border-radius: 15px;
-    width: 100%;
-    margin: 0px auto;
-    max-width: 1110px;
+    /* width: 100%;  width 100% 주고 max-width를 주면 처음부터 최대 max-width를 기준으로 100%가 되고 화면이 줄어들면 반응형으로 줄어들게됨 */
     padding: 20px 20px 0px 20px;
 }
 .about__career__wrap{
     display: flex;
     align-items: center;
-    margin: 0px auto;
-    max-width: 1150px;
     margin-bottom: 20px;
 }
 .about__career__img{

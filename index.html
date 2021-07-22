@@ -33,7 +33,7 @@
     <!-- header nav bar 항상 고정 -->
     <nav>
         <div>
-            <div><img src="./imgs/favicon.png"/><span>CatFFather</span></div>
+            <div><img src="./imgs/favicon.png"/><a href="#home">CatFFather</a></div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -50,7 +50,7 @@
             <img class="home__img" src="./imgs/main.png"/>
             <p class="home__title">안녕하세요!</p>
             <p class="home__title">저는 CatFFather 입니다!</p>
-            <p class="home__title__sub">인천에 살고있는 행복한 Front-end 개발자 입니다.</p>
+            <p class="home__title__sub">개발이 행복한 Front-end 개발자 입니다.</p>
             <a class="home__a" href="#contact">CONTACT ME!</a>
         </section>
         <!-- 자기소개 -->
@@ -68,20 +68,35 @@
                 &nbsp;저는 6개월의 국비교육을 통해 개발자에 입문 하였습니다.
                 그리고 x년차 개발자로 일을 하고있습니다. 항상 배우는 것에 대해 행복함을 느끼며 살아가고 있습니다.<br/>
             </p>
+            <div class="about__mySkills__wrap">
+                <div class="about__mySkill">
+                    <i class="fab fa-html5 about__icon"></i>
+                    <h2 class="about__mySkill__title">Basics</h2>
+                    <p class="about__mySkill__info">HTML, CSS, JavaScript</p>
+                </div>
+                <div class="about__mySkill">
+                    <i class="fab fa-react about__icon"></i>
+                    <h2 class="about__mySkill__title">React</h2>
+                    <p class="about__mySkill__info">프로젝트 경험 있음</p>
+                </div>
+                <div class="about__mySkill">
+                    <i class="fab fa-vuejs about__icon"></i>
+                    <h2 class="about__mySkill__title">Vue.js</h2>
+                    <p class="about__mySkill__info">프로젝트 경험 있음</p>
+                </div>
+            </div>
             <!-- 저장된 json파일을 js를 이용하여 careers 목록을 가지고옴 -->
             <div class="about__careers">
                 
             </div>
-
-
-
         </section>
         <!-- 기술 -->
         <section id='skills' class="skills">
             <p class="title">Skills</p>
             <p class="skills__contents">누구보다 성장에 대한 열망이 큽니다. 
                 어떤 기술이라도 새로 배울 수 있는 기회만 있다면 배우고 적용시켜보고 싶습니다. 
-                지금은 Front-end 개발을 하고 있지만 side project를 통해 Back-end 기술도 배우고 있습니다.
+                지금은 Front-end 개발을 하고 있지만 side project를 통해 Back-end 기술도 배우고 있습니다.<br/>
+                또한, 팀 단위 프로젝트를 경험해 보았기 때문에 팀 단위 프로젝트를 무리 없이 수행할 수 있고 팀워크가 얼마나 중요한지 인지하고 있습니다.
             </p>
             <div class="skills__wrap">
                 <!-- 저장된 json파일을 js를 이용하여 skills, tools 목록을 가지고옴 -->
