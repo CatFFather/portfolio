@@ -127,7 +127,7 @@ main .title{
 }
 .about__contents{
     font-size: 18px;
-    /* text-align: center; */
+    text-align: center;
     margin-bottom: 25px;
 }
 
