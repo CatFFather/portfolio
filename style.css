@@ -23,7 +23,7 @@ a:link { text-decoration: none;}
 
 
 /* header nav bar 항상 고정 */
-nav{
+.navbar{
   width: calc(100% - 30px); /* width를 100%로 하면 양쪽 padding값 만큼 튀어나옴(position: fixed 때문)*/
   position: fixed;
   display: flex;
@@ -33,7 +33,7 @@ nav{
   padding: 15px;
   background-color: #8c8d8f;
 }
-nav div{
+.navbar__wrap{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -41,28 +41,35 @@ nav div{
     max-width: 1092px;
 }
 /* nav 왼쪽 (이미지, 닉네임) */
-nav div div {
+.navbar__left {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
 }
-nav div div img{
+.navbar__imgWrap{
+    display: flex;
+    align-items: center;
+}
+.navbar__imgWrap__img{
     height: 70px;
     /* width: 80px; */
 }
-nav div div a{
+.navbar__imgWrap__a{
     font-size: 22px;
     color: white;
 }
+.navbar__menuBtn{
+    display: none;
+}
 
 /* nav 오른쪽 (메뉴) */
-/* nav div ul{
+/* .navbar__rigth{
     display: flex;
     align-items: center;
     list-style-type : none;
     padding: 0px;
 } */
-nav div ul a{
+.navbar__btn{
     margin: 0 10px;
     padding: 7px;
     font-size: 16px;
@@ -92,10 +99,14 @@ main .title{
 /* home */
 .home{
     padding: 100px 20px 20px 20px;
+    background-color: #8c8d8f;
+}
+.home__wrap{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #8c8d8f;
+    margin: 0px auto;   /* about은 전체를 가운대 정렬함 */
+    max-width: 1150px;
 }
 .home__img{
     margin: 20px 0px;
@@ -133,6 +144,7 @@ main .title{
     margin: 0px auto;   /* about은 전체를 가운대 정렬함 */
     max-width: 1150px;
 }
+
 .about__contents{
     font-size: 18px;
     text-align: center;
@@ -273,13 +285,12 @@ main .title{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0px auto;   
+    max-width: 1092px;
 }
 
 .project__btn_list{
     justify-content: center;
-    max-width: 1092px;
-    margin: 0px auto;
-
 }
 .project__btn_item{
     cursor: pointer;
@@ -329,7 +340,6 @@ main .title{
     align-items: center;
     flex-direction: column;
     background-color: #8c8d8f; 
-    min-height: 0px; /* <-- 지울 예정*/
 }
 .contact__title{
     color: white;
@@ -364,9 +374,52 @@ main .title{
 
 
 
+/* 미디어 쿼리 */
+@media screen and (max-width:720px){
+    /* nav bar */
+    .navbar{
+        /* 버튼 클릭했을 때 아래 속성이 나와줘야함 js 사용해야함 */
+        /* height: 350px; */
+    }
+    .navbar__wrap{
+        flex-direction: column;
+    }
+    .navbar__rigth{
+        flex-direction: column;
+        /* 버튼 클릭했을 때 아래 속성이 나와줘야함 js 사용해야함*/
+        display: none;
+    }
+    .navbar__menuBtn{
+        display: flex;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+    }
+    .navbar__btn{
+        margin: 5px;
+        border: none;
+        width: 100%;
+        text-align: center;
+    }
 
-/* 지울 예정 */
-main section{
-    min-height: 700px;
+    /* about */
+    .about__mySkill{
+        margin-bottom: 10px;
+    }
+    .about__mySkills__wrap{
+        margin : 20px 0px;
+        flex-direction:column;
+    }
+    .about__career__wrap{
+        flex-direction:column;
+        text-align: center;
+    }
+    .about__career__img{
+        margin: 0;
+    }
+
+    /* contact */
+    .contact{
+        text-align: center;
+    }
 }
-

@@ -31,27 +31,37 @@
 
 <body>
     <!-- header nav bar 항상 고정 -->
-    <nav>
-        <div>
-            <div><img src="./imgs/favicon.png"/><a href="#home">CatFFather</a></div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#testimonial">Testimonial</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <nav class="navbar">
+        <div class="navbar__wrap">
+            <div class="navbar__left">
+                <div class="navbar__imgWrap">
+                    <img class="navbar__imgWrap__img" src="./imgs/favicon.png"/>
+                    <a class="navbar__imgWrap__a" href="#home">CatFFather</a>
+                </div>
+                <div class="navbar__menuBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <ul class="navbar__rigth">
+                <li class="navbar__btn"><a href="#home">Home</a></li>
+                <li class="navbar__btn"><a href="#about">About</a></li>
+                <li class="navbar__btn"><a href="#skills">Skills</a></li>
+                <li class="navbar__btn"><a href="#project">Project</a></li>
+                <li class="navbar__btn"><a href="#testimonial">Testimonial</a></li>
+                <li class="navbar__btn"><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     <main>
         <!-- 시작 (나를 가장 잘 나타낼 수 있는, 강조할 수 있는 문장을 생각해보자)-->
         <section id='home' class="home">
-            <img class="home__img" src="./imgs/main.png"/>
-            <p class="home__title">안녕하세요!</p>
-            <p class="home__title">저는 CatFFather 입니다!</p>
-            <p class="home__title__sub">개발이 행복한 Front-end 개발자 입니다.</p>
-            <a class="home__a" href="#contact">CONTACT ME!</a>
+            <div class="home__wrap">
+                <img class="home__img" src="./imgs/main.png"/>
+                <p class="home__title">안녕하세요!</p>
+                <p class="home__title">저는 CatFFather 입니다!</p>
+                <p class="home__title__sub">개발이 행복한 Front-end 개발자 입니다.</p>
+                <a class="home__a" href="#contact">CONTACT ME!</a>
+            </div>
         </section>
         <!-- 자기소개 -->
         <section id='about' class="about">
