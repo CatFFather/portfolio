@@ -8,6 +8,14 @@ html{
 body{
   margin: 0px;
   height: 100%;
+  
+}
+/* 공통 ul */
+body ul{
+    display: flex;
+    align-items: center;
+    list-style-type : none;
+    padding: 0px;
 }
 /* a태그 밑줄x, 스크롤바 삭제 */
 a:link { text-decoration: none;}
@@ -48,12 +56,12 @@ nav div div a{
 }
 
 /* nav 오른쪽 (메뉴) */
-nav div ul{
+/* nav div ul{
     display: flex;
     align-items: center;
     list-style-type : none;
     padding: 0px;
-}
+} */
 nav div ul a{
     margin: 0 10px;
     padding: 7px;
@@ -267,6 +275,45 @@ main .title{
     flex-direction: column;
 }
 
+.project__btn_list{
+    justify-content: center;
+    max-width: 1092px;
+    margin: 0px auto;
+
+}
+.project__btn_item{
+    cursor: pointer;
+    font-size: 18px;
+    margin : 0px 10px;
+    border: 1px black solid;
+    padding: 10px 20px;
+    min-width: 60px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+}
+.project__btn_badge{
+    background-color: #feac3e;
+    border-radius: 50%;
+    padding: 5px 10px;
+    height: 100%;
+}
+.project__list{
+    word-break: normal;
+    display: inline-block;
+    width: 100%;
+    margin: 25px 0px;
+    height: 100%;
+}
+.project_item{
+    display: inline-block;
+    width: 23%;
+    border: 1px solid black;
+    margin: 5px;
+    padding-bottom: 20%; /* 이걸 주면 정사각형 모양으로 바꿀 수 있음*/
+}
+
+
 /* testimonial  */
 .testimonial{
     padding: 100px 20px 20px 20px;
@@ -314,6 +361,8 @@ main .title{
     margin: 0 0 10px 0;
     margin-bottom: 20px;
 }
+
+
 
 
 /* 지울 예정 */
