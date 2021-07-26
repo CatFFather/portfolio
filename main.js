@@ -88,7 +88,7 @@ getSkillsList().then((result)=>{
 
 })
 
-function getMenuList(){
+function getMenuListToggle(){
     const navbar = document.querySelector('.navbar')
     const navbar__rigth = document.querySelector('.navbar__rigth')
     navbar.classList.toggle('navbar--toggle')
