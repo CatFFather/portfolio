@@ -378,8 +378,10 @@ main .title{
 @media screen and (max-width:720px){
     /* nav bar */
     .navbar{
-        /* 버튼 클릭했을 때 아래 속성이 나와줘야함 js 사용해야함 */
-        /* height: 350px; */
+
+    }
+    .navbar--toggle{
+        height: 350px;
     }
     .navbar__wrap{
         flex-direction: column;
@@ -388,6 +390,9 @@ main .title{
         flex-direction: column;
         /* 버튼 클릭했을 때 아래 속성이 나와줘야함 js 사용해야함*/
         display: none;
+    }
+    .navbar__rigth--toggle{
+        display: flex;
     }
     .navbar__menuBtn{
         display: flex;
