@@ -429,7 +429,7 @@ main .title{
 
 
 
-/* 미디어 쿼리 */
+/* 미디어 쿼리 720px */
 @media screen and (max-width:720px){
     /* nav bar */
     .navbar{
@@ -438,7 +438,7 @@ main .title{
     .navbar--toggle{
         height: 350px;
     }
-    .navbar__wrap{
+    .navbar__container{
         flex-direction: column;
     }
     .navbar__rigth{
