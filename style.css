@@ -68,6 +68,9 @@ button {
 }
 .navbar__menuBtn{
     display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
 }
 
 /* nav 오른쪽 (메뉴) */
@@ -85,6 +88,7 @@ button {
     border: white solid 1px;
     border-radius: 5px;
 }
+
 .navbar__btn:hover{
     background-color: #38383b;
 }
@@ -432,9 +436,6 @@ main .title{
 /* 미디어 쿼리 720px */
 @media screen and (max-width:720px){
     /* nav bar */
-    .navbar{
-
-    }
     .navbar--toggle{
         height: 350px;
     }
@@ -451,15 +452,16 @@ main .title{
     }
     .navbar__menuBtn{
         display: flex;
-        cursor: pointer;
-        font-size: 30px;
-        color: white;
     }
     .navbar__btn{
         margin: 5px;
         border: none;
         width: 100%;
         text-align: center;
+    }
+    .navbar__btn a{
+        width: 100%;
+        display: block;
     }
 
     /* about */
@@ -476,6 +478,11 @@ main .title{
     }
     .about__career__img{
         margin: 0;
+    }
+
+    /* Skills */
+    .skills__wrap{
+        flex-direction:column;
     }
 
     /* project */
