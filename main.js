@@ -88,9 +88,12 @@ getSkillsList().then((result)=>{
 
 })
 
+
+// 메뉴 토글 버튼 
 function getMenuListToggle(){
     const navbar = document.querySelector('.navbar')
     const navbar__rigth = document.querySelector('.navbar__rigth')
     navbar.classList.toggle('navbar--toggle')
     navbar__rigth.classList.toggle('navbar__rigth--toggle')
 }
+
