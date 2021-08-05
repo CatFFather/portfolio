@@ -35,8 +35,8 @@
         <div class="navbar__container">
             <div class="navbar__left">
                 <div class="navbar__imgWrap">
-                    <img class="navbar__imgWrap__img" src="./imgs/favicon.png"/>
-                    <a class="navbar__imgWrap__a" href="#home">CatFFather</a>
+                    <img data-id="home" class="navbar__imgWrap__img" src="./imgs/favicon.png"/>
+                    <span data-id="home" class="navbar__imgWrap__span">CatFFather</span>
                 </div>
                 <!-- 반응형 토글 버튼 -->
                 <div class="navbar__menuBtn" onclick="getMenuListToggle()">
@@ -44,18 +44,18 @@
                 </div>
             </div>
             <ul class="navbar__rigth">
-                <li class="navbar__btn" onclick="getMenuListToggle()"><a href="#home">Home</a></li>
-                <li class="navbar__btn" onclick="getMenuListToggle()"><a href="#about">About</a></li>
-                <li class="navbar__btn" onclick="getMenuListToggle()"><a href="#skills">Skills</a></li>
-                <li class="navbar__btn" onclick="getMenuListToggle()"><a href="#project">Project</a></li>
-                <li class="navbar__btn" onclick="getMenuListToggle()"><a href="#testimonial">Testimonial</a></li>
-                <li class="navbar__btn" onclick="getMenuListToggle()"><a href="#contact">Contact</a></li>
+                <li data-id="home" class="navbar__btn" onclick="getMenuListToggle()">Home</li>
+                <li data-id="about" class="navbar__btn" onclick="getMenuListToggle()">About</li>
+                <li data-id="skills" class="navbar__btn" onclick="getMenuListToggle()">Skills</li>
+                <li data-id="project" class="navbar__btn" onclick="getMenuListToggle()">Project</li>
+                <li data-id="testimonial" class="navbar__btn" onclick="getMenuListToggle()">Testimonial</li>
+                <li data-id="contact" class="navbar__btn" onclick="getMenuListToggle()">Contact</li>
             </ul>
         </div>
     </nav>
     <!-- 오른쪽 하단 항상 고정 ↑ 버튼 -->
     <nav class="arrow-up__button">
-        <a href="#home"><i class="fas fa-arrow-up"></i></a>
+        <i class="fas fa-arrow-up" data-id="home"></i>
     </nav>
 
     <main>
@@ -66,7 +66,7 @@
                 <p class="home__title">안녕하세요!</p>
                 <p class="home__title">저는 CatFFather 입니다!</p>
                 <p class="home__title__sub">개발이 행복한 Front-end 개발자 입니다.</p>
-                <a class="home__a" href="#contact">CONTACT ME!</a>
+                <p class="home__btn" data-id="contact">CONTACT ME!</p>
             </div>
         </section>
         <!-- 자기소개 -->

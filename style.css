@@ -61,10 +61,12 @@ button {
 .navbar__imgWrap__img{
     height: 70px;
     /* width: 80px; */
+    cursor: pointer;
 }
-.navbar__imgWrap__a{
+.navbar__imgWrap__span{
     font-size: 22px;
     color: white;
+    cursor: pointer;
 }
 .navbar__menuBtn{
     display: none;
@@ -87,6 +89,7 @@ button {
     color: white;
     border: white solid 1px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .navbar__btn:hover{
@@ -106,6 +109,7 @@ nav div ul a:visited {
     bottom: 20px;
     right: 20px;
     border-radius: 50%;
+    cursor: pointer;
 }
 .fa-arrow-up{
     font-size: 40px;
@@ -157,7 +161,7 @@ main .title{
     text-align: center;
     margin: 10px 0px;
 }
-.home__a{
+.home__btn{
     /* margin: 20px 0px; */
     padding: 10px;
     font-size: 22px;
@@ -166,6 +170,7 @@ main .title{
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 .home__a:hover{
     background-color: #38383b;

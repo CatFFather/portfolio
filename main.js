@@ -1,3 +1,5 @@
+// ------------------------------- json 아이템 가져오기-------------------------------
+
 // career List 가져오기 
 function getCareerList(){
     // 함수의 return 값을 fetch로 얻은 값으로 해준다.
@@ -88,6 +90,7 @@ getSkillsList().then((result)=>{
 
 })
 
+// ------------------------------- 버튼클릭 이벤트 -------------------------------
 
 // 메뉴 토글 버튼 
 function getMenuListToggle(){
@@ -95,5 +98,35 @@ function getMenuListToggle(){
     const navbar__rigth = document.querySelector('.navbar__rigth')
     navbar.classList.toggle('navbar--toggle')
     navbar__rigth.classList.toggle('navbar__rigth--toggle')
+}
+
+// nav bar 버튼 클릭
+const navbar__container = document.querySelector('.navbar__container')
+navbar__container.addEventListener('click',(e)=>{
+    if(!e.target.dataset.id) return
+    goToId(e.target.dataset.id)
+})
+
+// ↑ 버튼 클릭
+const arrow_up__button = document.querySelector('.fa-arrow-up')
+arrow_up__button.addEventListener('click',(e)=>{
+    console.log(e)
+    if(!e.target.dataset.id) return
+    goToId(e.target.dataset.id)
+})
+
+// CONTACT ME! 버튼 클릭
+const home__btn = document.querySelector('.home__btn')
+home__btn.addEventListener('click',(e)=>{
+    if(!e.target.dataset.id) return
+    goToId(e.target.dataset.id)
+})
+
+// 버튼 클릭시 해당 id로 이동하기
+function goToId(id){
+    const elementId = document.getElementById(id)
+    // html 맨 위에서 id까지의 거리
+    const distanceFromHtml = elementId.getBoundingClientRect().top + window.pageYOffset
+    window.scrollTo(0, distanceFromHtml);
 }
 
