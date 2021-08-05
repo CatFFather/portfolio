@@ -110,7 +110,6 @@ navbar__container.addEventListener('click',(e)=>{
 // ↑ 버튼 클릭
 const arrow_up__button = document.querySelector('.fa-arrow-up')
 arrow_up__button.addEventListener('click',(e)=>{
-    console.log(e)
     if(!e.target.dataset.id) return
     goToId(e.target.dataset.id)
 })
@@ -125,8 +124,9 @@ home__btn.addEventListener('click',(e)=>{
 // 버튼 클릭시 해당 id로 이동하기
 function goToId(id){
     const elementId = document.getElementById(id)
+    elementId.scrollIntoView()
     // html 맨 위에서 id까지의 거리
-    const distanceFromHtml = elementId.getBoundingClientRect().top + window.pageYOffset
-    window.scrollTo(0, distanceFromHtml);
+    // const distanceFromHtml = elementId.getBoundingClientRect().top + window.pageYOffset
+    // window.scrollTo(0, distanceFromHtml);
 }
 
