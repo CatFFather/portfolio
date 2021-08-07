@@ -108,10 +108,9 @@ navbar__container.addEventListener('click',(e)=>{
 })
 
 // ↑ 버튼 클릭
-const arrow_up__button = document.querySelector('.fa-arrow-up')
-arrow_up__button.addEventListener('click',(e)=>{
-    if(!e.target.dataset.id) return
-    goToId(e.target.dataset.id)
+const arrow__up__button = document.querySelector('.arrow-up__button')
+arrow__up__button.addEventListener('click',(e)=>{
+    goToId('home')
 })
 
 // CONTACT ME! 버튼 클릭
@@ -128,5 +127,18 @@ function goToId(id){
     // html 맨 위에서 id까지의 거리
     // const distanceFromHtml = elementId.getBoundingClientRect().top + window.pageYOffset
     // window.scrollTo(0, distanceFromHtml);
-}
+}   
+
+// ↑ 버튼 보이기 (Y축 500 이상일 때)
+document.addEventListener('scroll',(e)=>{
+    console.log(window.pageYOffset)
+    console.log(e)
+    if(window.pageYOffset>500){
+        // 위에 만들어진 arrow__up__button을 사용
+        arrow__up__button.classList.add('opacity__1')
+    } else{
+        arrow__up__button.classList.remove('opacity__1')
+    }
+})
+
 

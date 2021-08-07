@@ -110,12 +110,20 @@ nav div ul a:visited {
     right: 20px;
     border-radius: 50%;
     cursor: pointer;
+    /* display : none 으로는 transition이 적용되지 않음 --> opacity 사용함*/
+    opacity: 0;
+    pointer-events: none;   /* 클릭 이벤트를 발생 하지 않음 */
+    transition: opacity 300ms ease;
 }
 .fa-arrow-up{
     font-size: 40px;
     color: white;
     padding: 15px 17.5px;
+}
 
+.opacity__1{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* main */
