@@ -28,6 +28,9 @@ button {
     border: none;
     outline: none;
 }
+.btn__border{
+    border: white solid 1px;
+}
 
 
 /* header nav bar 항상 고정 */
@@ -87,7 +90,6 @@ button {
     padding: 7px;
     font-size: 16px;
     color: white;
-    border: white solid 1px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -174,12 +176,12 @@ main .title{
     padding: 10px;
     font-size: 22px;
     color: white;
-    border: white solid 1px;
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 40px;
     cursor: pointer;
 }
+
 .home__a:hover{
     background-color: #38383b;
 }
@@ -491,10 +493,6 @@ main .title{
         border: none;
         width: 100%;
         text-align: center;
-    }
-    .navbar__btn a{
-        width: 100%;
-        display: block;
     }
 
     /* about */

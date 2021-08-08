@@ -12,7 +12,7 @@ function getCareerList(){
     });
 }
 getCareerList().then((careers)=>{
-    console.log(careers)
+    // console.log(careers)
     let about__career = document.querySelector('.about__careers')
     careers.forEach((career,index)=>{
         let about__career__wrap = document.createElement('div')
@@ -129,16 +129,27 @@ function goToId(id){
     // window.scrollTo(0, distanceFromHtml);
 }   
 
+// ------------------------------- js를 이용하여 css 추가 -------------------------------
+// TODO nav bar 내려올때 색 변화
+const home = document.querySelector('#home')
+const homeOffsetHeight = home.offsetHeight;
+
+
+
 // ↑ 버튼 보이기 (Y축 500 이상일 때)
 document.addEventListener('scroll',(e)=>{
-    console.log(window.pageYOffset)
-    console.log(e)
-    if(window.pageYOffset>500){
+    if(window.pageYOffset>homeOffsetHeight/2){
         // 위에 만들어진 arrow__up__button을 사용
         arrow__up__button.classList.add('opacity__1')
     } else{
         arrow__up__button.classList.remove('opacity__1')
     }
 })
+
+// document.addEventListener('scroll',(e)=>{
+
+
+// })  
+
 
 
