@@ -43,6 +43,7 @@ button {
   height: 50px;
   padding: 15px; 
   background-color: #8c8d8f;
+  z-index : 10
 }
 .navbar__container{
     width: 100%;
@@ -122,7 +123,6 @@ nav div ul a:visited {
     color: white;
     padding: 15px 17.5px;
 }
-
 .opacity__1{
     opacity: 1;
     pointer-events: auto;
@@ -145,6 +145,7 @@ main .title{
 
 /* home */
 .home{
+    transition: opacity 300ms ease;
     background-color: #8c8d8f;
 }
 .home__container{
@@ -232,7 +233,7 @@ main .title{
 .about__icon .fab:hover{
     transform: rotate(-30deg) scale(1.3);
     transition: all 300ms ease;
-    color: tomato;
+    color: #feac3e;
 }
 .about__mySkill__title{
     margin: 10px 0px;

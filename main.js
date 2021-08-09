@@ -131,10 +131,17 @@ function goToId(id){
 
 // ------------------------------- js를 이용하여 css 추가 -------------------------------
 // TODO nav bar 내려올때 색 변화
+
 const home = document.querySelector('#home')
 const homeOffsetHeight = home.offsetHeight;
 
+// home 서서히 사라지기 ★★★★★★★ 이런식으로도 가능함 ★★★★★★★
+document.addEventListener('scroll',(e)=>{
+    if(window.pageYOffset<homeOffsetHeight){
+        home.style.opacity = 1 - (window.pageYOffset/homeOffsetHeight)
+    }
 
+})
 
 // ↑ 버튼 보이기 (Y축 500 이상일 때)
 document.addEventListener('scroll',(e)=>{
@@ -145,11 +152,3 @@ document.addEventListener('scroll',(e)=>{
         arrow__up__button.classList.remove('opacity__1')
     }
 })
-
-// document.addEventListener('scroll',(e)=>{
-
-
-// })  
-
-
-
