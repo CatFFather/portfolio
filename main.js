@@ -90,6 +90,61 @@ getSkillsList().then((result)=>{
 
 })
 
+// Project List 가져오기 (필터링 기능도 있음)
+function getProjectList(type,initOption){
+    return fetch('./data/portfolio.json')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(myJson) {
+        if(type){
+            const newProjectList = myJson.project.filter((project)=>{
+                return project.type==type
+            })  
+            return newProjectList
+        } else{
+            return myJson.project
+        }
+    })
+    .then((projects)=>{
+        const project__list = document.querySelector('.project__list')
+        project__list.innerHTML = '' // <-- 여기서 초기화 한번 해줘야함(초기화 안하면 계속 더해짐)
+        projects.forEach((project)=>{
+            const project_item = document.createElement('li')
+            project_item.classList.add('project_item')
+            project_item.innerHTML = `
+                <a href="${project.href}"><img width='100%' height='100%' src="${project.img}"/></a>
+            `
+            project__list.appendChild(project_item)
+        })
+        // badgeCount 받아오기 위함(첫 랜더링때만 실행)
+        if(initOption){
+            const allCount = projects.length
+            const studyCount = projects.filter((project)=>{
+                return project.type=='Study'
+            }).length
+            const businessCount = projects.filter((project)=>{
+                return project.type=='Business'
+            }).length
+
+            const project__btn_badge = document.querySelectorAll('.project__btn_badge')
+            project__btn_badge.forEach((badge)=>{
+                if(badge.dataset.param==''){
+                    badge.innerHTML = allCount
+                } else if (badge.dataset.param=='Study'){
+                    badge.innerHTML = studyCount
+                } else if (badge.dataset.param=='Business'){
+                    badge.innerHTML = businessCount
+                }
+            })
+        }
+    })    
+}
+// 페이지 첫 랜더링 시 기본값(All)
+getProjectList('','init') 
+
+
+
 // ------------------------------- 버튼클릭 이벤트 -------------------------------
 
 // 메뉴 토글 버튼 
@@ -127,7 +182,19 @@ function goToId(id){
     // html 맨 위에서 id까지의 거리
     // const distanceFromHtml = elementId.getBoundingClientRect().top + window.pageYOffset
     // window.scrollTo(0, distanceFromHtml);
-}   
+}
+
+// project List 필터링 (버튼클릭)
+const project__btn_list = document.querySelector('.project__btn_list')
+const project__btn_item = document.querySelectorAll('.project__btn_item ')
+project__btn_list.addEventListener('click',(e)=>{
+    if(e.target.dataset.param==undefined) return
+    project__btn_item.forEach((item)=>{
+        item.classList.remove('active')
+        item.dataset.param == e.target.dataset.param && item.classList.add('active')
+    })
+    getProjectList(e.target.dataset.param)
+})
 
 // ------------------------------- js를 이용하여 css 추가 -------------------------------
 // TODO nav bar 내려올때 색 변화

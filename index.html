@@ -141,16 +141,14 @@
         <section id='project' class="project">
             <div class="project__container">
                 <p class="title">Project</p>
+                <!-- badge 카운팅 getProjectList 함수 이용하여 받아오기 -->
                 <ul class="project__btn_list">
-                    <li class="project__btn_item active">All <span class="project__btn_badge">5</span></li>
-                    <li class="project__btn_item">Study <span class="project__btn_badge">3</span></li>
-                    <li class="project__btn_item">Business <span class="project__btn_badge">2</span></li>
+                    <li class="project__btn_item active" data-param=''>All <span class="project__btn_badge" data-param=''><!-- badgeCount--></span></li>
+                    <li class="project__btn_item" data-param='Study'>Study <span class="project__btn_badge" data-param='Study'><!-- badgeCount--></span></li>
+                    <li class="project__btn_item" data-param='Business'>Business <span class="project__btn_badge" data-param='Business'><!-- badgeCount--></span></li>
                 </ul>
+                <!-- 프로젝트 리스트 json 데이터 받아오기 -->
                 <ul class="project__list">
-                    <li class="project_item"><img width='100%' height='100%' src="./imgs/까까요헤어샵spring.png"/></li>
-                    <li class="project_item"><img width='100%' height='100%' src="./imgs/미니쇼핑몰basics.png"/></li>
-                    <li class="project_item"><img width='100%' height='100%' src="./imgs/유튜브클론basics.png"/></li>
-                    <li class="project_item"><img width='100%' height='100%' src="./imgs/제품판매vue.png"/></li>
                 </ul>     
             </div>
         </section>

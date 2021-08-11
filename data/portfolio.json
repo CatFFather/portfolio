@@ -18,5 +18,12 @@
         {"type" : "etc", "name" : "Notion"},
         {"type" : "etc", "name" : "Slack"},
         {"type" : "etc", "name" : "Git"}
+    ],
+
+    "project":[
+        {"type":"Study", "name" : "유튜브 클론코딩", "info" : "HTML/CSS/JS를 이용한 유튜브 페이지 제작","img" : "./imgs/유튜브클론basics.png", "href" : "https://github.com/CatFFather/YouTubeClone"},
+        {"type":"Study", "name" : "미니쇼핑몰", "info" : "HTML/CSS/JS를 이용한 미니쇼핑몰 구현","img" : "./imgs/미니쇼핑몰basics.png", "href" : "https://github.com/CatFFather/shopingmall"},
+        {"type":"Study", "name" : "제품 판매 웹앱", "info" : "Vue.js/mariaDB를 이용한 제품 판매 웹앱 구현","img" : "./imgs/제품판매vue.png", "href" : "https://blog.naver.com/dlwoghddldi/222285357050"},
+        {"type":"Business", "name" : "까까요헤어샵", "info" : "JSP/oracle DB를 이용한 까까요헤어샵 구현","img" : "./imgs/까까요헤어샵spring.png", "href" : "https://blog.naver.com/dlwoghddldi/222123918233"}
     ]
 }
