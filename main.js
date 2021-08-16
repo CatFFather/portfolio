@@ -113,7 +113,10 @@ function getProjectList(type,initOption){
             const project_item = document.createElement('li')
             project_item.classList.add('project_item')
             project_item.innerHTML = `
-                <a href="${project.href}"><img width='100%' height='100%' src="${project.img}"/></a>
+                <a href="${project.href}">
+                    <img src="${project.img}"/>
+                    <div class="project_item_info">${project.info}</div>
+                </a>
             `
             project__list.appendChild(project_item)
         })
