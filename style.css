@@ -423,8 +423,8 @@ main .title{
     align-items: center;
 }
 .project_item img{
-    max-width: 200px;
-    max-height: 200px;
+    width: 200px;
+    height: 200px;
 }
 
 .project_item_info{
@@ -441,7 +441,7 @@ main .title{
     align-items: center;
 }
 .project_item_info:hover{
-    opacity: 0.7;
+    opacity: 0.8;
     transition: opacity 300ms ease;
 }
 
