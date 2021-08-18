@@ -107,6 +107,7 @@ nav div ul a:visited {
 
 /* 오른쪽 하단 항상 고정 ↑ 버튼 */
 .arrow-up__button{
+    z-index: 9999;
     background-color: #8c8d8f;
     position: fixed;
     bottom: 20px;
