@@ -412,7 +412,6 @@ main .title{
     background: #ebebeb;
     text-align: center;
     /* padding-bottom: 20%; 이걸 주면 정사각형 모양으로 바꿀 수 있음 */
-    
 }
 .project_item a{
     z-index: 10;
@@ -437,8 +436,10 @@ main .title{
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 300ms ease-in;
 }
 .project_item_info:hover{
     opacity: 0.8;
