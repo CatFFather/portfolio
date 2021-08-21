@@ -21,6 +21,7 @@
     ],
 
     "project":[
+        {"type":"Study", "name" : "포트폴리오", "info" : "HTML/CSS/JS/JSON을 이용한 포트폴리오 페이지 제작","img" : "./imgs/portfolio.png", "href" : "https://github.com/CatFFather/portfolio"},
         {"type":"Study", "name" : "유튜브 클론코딩", "info" : "HTML/CSS/JS를 이용한 유튜브 페이지 제작","img" : "./imgs/유튜브클론basics.png", "href" : "https://github.com/CatFFather/YouTubeClone"},
         {"type":"Study", "name" : "미니쇼핑몰", "info" : "HTML/CSS/JS를 이용한 미니쇼핑몰 구현","img" : "./imgs/미니쇼핑몰basics.png", "href" : "https://github.com/CatFFather/shopingmall"},
         {"type":"Study", "name" : "제품 판매 웹앱", "info" : "Vue.js/mariaDB를 이용한 제품 판매 웹앱 구현","img" : "./imgs/제품판매vue.png", "href" : "https://blog.naver.com/dlwoghddldi/222285357050"},

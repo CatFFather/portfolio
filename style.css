@@ -126,7 +126,7 @@ nav div ul a:visited {
 }
 .opacity__1{
     opacity: 1;
-    pointer-events: auto;
+    pointer-events: auto; /* 클릭 이벤트 다시 가능하게 만들어줌 */
 }
 
 /* main */
