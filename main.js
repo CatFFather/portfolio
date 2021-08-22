@@ -196,8 +196,8 @@ const project__btn_item = document.querySelectorAll('.project__btn_item ')
 project__btn_list.addEventListener('click',(e)=>{
     if(e.target.dataset.param==undefined) return
     project__btn_item.forEach((item)=>{
-        item.classList.remove('active')
-        item.dataset.param == e.target.dataset.param && item.classList.add('active')
+        item.classList.remove('selected')
+        item.dataset.param == e.target.dataset.param && item.classList.add('selected')
     })
     getProjectList(e.target.dataset.param)
 })
