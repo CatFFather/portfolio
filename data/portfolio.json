@@ -1,31 +1,78 @@
 {
-    "careers":[
-        {"logo" : "./imgs/logo_ICIA.png", "href" : "https://www.icia.co.kr/", "info" : "JS 프레임워크를 활용한 반응형 웹 UI 개발자 양성과정 수료", "term" : "2020.05.01 ~ 2020.10.29"},
-        {"logo" : "./imgs/logo_delphicom.png", "href" : "http://www.delphicom.net/", "info" : "델피콤㈜ 신입 사원으로 입사", "term" : "2020.11.02 ~ 현재"}
-    ],
+  "careers": [
+    {
+      "logo": "./imgs/logo_ICIA.png",
+      "href": "https://www.icia.co.kr/",
+      "info": "JS 프레임워크를 활용한 반응형 웹 UI 개발자 양성과정 수료",
+      "term": "2020.05.01 ~ 2020.10.29"
+    },
+    {
+      "logo": "./imgs/logo_delphicom.png",
+      "href": "http://www.delphicom.net/",
+      "info": "델피콤㈜ 신입 사원으로 입사",
+      "term": "2020.11.02 ~ 현재"
+    }
+  ],
 
-    "skills":[
-        {"type" : "skill", "name" : "HTML", "percent" : 90},
-        {"type" : "skill", "name" : "CSS",  "percent" : 80},
-        {"type" : "skill", "name" : "JavaScript", "percent" : 80},
-        {"type" : "skill", "name" : "React", "percent" : 80},
-        {"type" : "skill", "name" : "Vue.js", "percent" : 75},
-        {"type" : "skill", "name" : "Java", "percent" : 60},
-        {"type" : "tool", "name" : "Visual Studio"},
-        {"type" : "tool", "name" : "Spring"},
-        {"type" : "tool", "name" : "MariaDB"},
-        {"type" : "etc", "name" : "Figma"},
-        {"type" : "etc", "name" : "Notion"},
-        {"type" : "etc", "name" : "Slack"},
-        {"type" : "etc", "name" : "Git"}
-    ],
+  "skills": [
+    { "type": "skill", "name": "HTML", "percent": 90 },
+    { "type": "skill", "name": "CSS", "percent": 80 },
+    { "type": "skill", "name": "JavaScript", "percent": 80 },
+    { "type": "skill", "name": "jQuery", "percent": 80 },
+    { "type": "skill", "name": "React", "percent": 80 },
+    { "type": "skill", "name": "Vue.js", "percent": 70 },
+    { "type": "skill", "name": "Java", "percent": 50 },
+    { "type": "tool", "name": "Visual Studio" },
+    { "type": "tool", "name": "Spring" },
+    { "type": "tool", "name": "MariaDB" },
+    { "type": "etc", "name": "Figma" },
+    { "type": "etc", "name": "Notion" },
+    { "type": "etc", "name": "Slack" },
+    { "type": "etc", "name": "Git" }
+  ],
 
-    "project":[
-        {"type":"Study", "name" : "포트폴리오", "info" : "HTML/CSS/JS/JSON을 이용한 포트폴리오 페이지 제작","img" : "./imgs/portfolio.png", "href" : "https://github.com/CatFFather/portfolio"},
-        {"type":"Study", "name" : "유튜브 클론코딩", "info" : "HTML/CSS/JS를 이용한 유튜브 페이지 제작","img" : "./imgs/유튜브클론basics.png", "href" : "https://github.com/CatFFather/YouTubeClone"},
-        {"type":"Study", "name" : "미니쇼핑몰", "info" : "HTML/CSS/JS를 이용한 미니쇼핑몰 구현","img" : "./imgs/미니쇼핑몰basics.png", "href" : "https://github.com/CatFFather/shopingmall"},
-        {"type":"Study", "name" : "제품 판매 웹앱", "info" : "Vue.js/mariaDB를 이용한 제품 판매 웹앱 구현","img" : "./imgs/제품판매vue.png", "href" : "https://blog.naver.com/dlwoghddldi/222285357050"},
-        {"type":"Business", "name" : "HIT뮤직", "info" : "JSP/oracle DB를 이용한 음원사이트 구현","img" : "./imgs/HIT뮤직spring.png", "href" : "https://blog.naver.com/dlwoghddldi/222052617142"},
-        {"type":"Business", "name" : "까까요헤어샵", "info" : "JSP/oracle DB를 이용한 까까요헤어샵 구현","img" : "./imgs/까까요헤어샵spring.png", "href" : "https://blog.naver.com/dlwoghddldi/222123918233"}
-    ]
+  "project": [
+    {
+      "type": "Study",
+      "name": "포트폴리오",
+      "info": "HTML/CSS/JS/JSON을 이용한 포트폴리오 페이지 제작",
+      "img": "./imgs/portfolio.png",
+      "href": "https://github.com/CatFFather/portfolio"
+    },
+    {
+      "type": "Study",
+      "name": "유튜브 클론코딩",
+      "info": "HTML/CSS/JS를 이용한 유튜브 페이지 제작",
+      "img": "./imgs/유튜브클론basics.png",
+      "href": "https://github.com/CatFFather/YouTubeClone"
+    },
+    {
+      "type": "Study",
+      "name": "미니쇼핑몰",
+      "info": "HTML/CSS/JS를 이용한 미니쇼핑몰 구현",
+      "img": "./imgs/미니쇼핑몰basics.png",
+      "href": "https://github.com/CatFFather/shopingmall"
+    },
+    {
+      "type": "Study",
+      "name": "제품 판매 웹앱",
+      "info": "Vue.js/mariaDB를 이용한 제품 판매 웹앱 구현",
+      "img": "./imgs/제품판매vue.png",
+      "href": "https://blog.naver.com/dlwoghddldi/222285357050"
+    },
+    {
+      "type": "Business",
+      "name": "HIT뮤직",
+      "info": "JSP/oracle DB를 이용한 음원사이트 구현",
+      "img": "./imgs/HIT뮤직spring.png",
+      "href": "https://blog.naver.com/dlwoghddldi/222052617142"
+    },
+    {
+      "type": "Business",
+      "name": "까까요헤어샵",
+      "info": "JSP/oracle DB를 이용한 까까요헤어샵 구현",
+      "img": "./imgs/까까요헤어샵spring.png",
+      "href": "https://blog.naver.com/dlwoghddldi/222123918233"
+    }
+  ]
 }

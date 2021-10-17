@@ -1,172 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- head 작성 -->
     <title>CatFFather's portfolio</title>
-    <meta name="description" content="CatFFather's portfolio">
-    <meta name="author" content="CatFFather">
+    <meta name="description" content="CatFFather's portfolio" />
+    <meta name="author" content="CatFFather" />
     <!-- 파비콘 -->
-    <link rel="icon" type="image/png" href="imgs/favicon.png">
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
     <!-- 아이콘 폰트어썸 사용 -->
-    <script src="https://kit.fontawesome.com/f43f0ce23f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f43f0ce23f.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- 구글폰트 다운로드 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- css, js 연결 -->
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script> <!-- defer가 가장 효율적 -->
-</head>
-<!-- 
+    <script src="main.js" defer></script>
+    <!-- defer가 가장 효율적 -->
+  </head>
+  <!-- 
     ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
     ★  안녕하세요! 반갑습니다! 개발자 도구를 오픈하신 당신은 개발자이군요!!                                      ★
     ★  저는 Front-end를 Vue.js , react를 통해 시작하였습니다. 정말 편하고 멋진 프레임워크라고 생각하였습니다.     ★
     ★  하지만 제 자신의 기본기가 많이 부족하다고 판단하여 이 portfolio 사이트를 만들게 되었습니다.                ★
     ★  CatFFather의 portfolio 사이트는 순수 HTML, CSS, JS, JOSN 으로만 만들어진 사이트입니다.                  ★
     ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
---> 
+-->
 
-<body>
+  <body>
     <!-- header nav bar 항상 고정 -->
     <nav class="navbar">
-        <div class="navbar__container">
-            <div class="navbar__left">
-                <div class="navbar__imgWrap">
-                    <img data-id="home" class="navbar__imgWrap__img" src="./imgs/favicon.png"/>
-                    <span data-id="home" class="navbar__imgWrap__span">CatFFather</span>
-                </div>
-                <!-- 반응형 토글 버튼 -->
-                <div class="navbar__menuBtn" onclick="getMenuListToggle()">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-            <ul class="navbar__rigth">
-                <li data-id="home" class="navbar__btn" onclick="getMenuListToggle()">Home</li>
-                <li data-id="about" class="navbar__btn" onclick="getMenuListToggle()">About</li>
-                <li data-id="skills" class="navbar__btn" onclick="getMenuListToggle()">Skills</li>
-                <li data-id="project" class="navbar__btn" onclick="getMenuListToggle()">Project</li>
-                <li data-id="testimonial" class="navbar__btn" onclick="getMenuListToggle()">Testimonial</li>
-                <li data-id="contact" class="navbar__btn" onclick="getMenuListToggle()">Contact</li>
-            </ul>
+      <div class="navbar__container">
+        <div class="navbar__left">
+          <div class="navbar__imgWrap">
+            <img
+              data-id="home"
+              class="navbar__imgWrap__img"
+              src="./imgs/favicon.png"
+            />
+            <span data-id="home" class="navbar__imgWrap__span">CatFFather</span>
+          </div>
+          <!-- 반응형 토글 버튼 -->
+          <div class="navbar__menuBtn" onclick="getMenuListToggle()">
+            <i class="fas fa-bars"></i>
+          </div>
         </div>
+        <ul class="navbar__rigth">
+          <li data-id="home" class="navbar__btn" onclick="getMenuListToggle()">
+            Home
+          </li>
+          <li data-id="about" class="navbar__btn" onclick="getMenuListToggle()">
+            About
+          </li>
+          <li
+            data-id="skills"
+            class="navbar__btn"
+            onclick="getMenuListToggle()"
+          >
+            Skills
+          </li>
+          <li
+            data-id="project"
+            class="navbar__btn"
+            onclick="getMenuListToggle()"
+          >
+            Project
+          </li>
+          <li
+            data-id="testimonial"
+            class="navbar__btn"
+            onclick="getMenuListToggle()"
+          >
+            Testimonial
+          </li>
+          <li
+            data-id="contact"
+            class="navbar__btn"
+            onclick="getMenuListToggle()"
+          >
+            Contact
+          </li>
+        </ul>
+      </div>
     </nav>
     <!-- 오른쪽 하단 항상 고정 ↑ 버튼 -->
     <nav class="arrow-up__button">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </nav>
 
     <main>
-        <!-- 시작 (나를 가장 잘 나타낼 수 있는, 강조할 수 있는 문장을 생각해보자)-->
-        <section id='home' class="home">
-            <div class="home__container">
-                <img class="home__img" src="./imgs/main.png"/>
-                <p class="home__title">안녕하세요!</p>
-                <p class="home__title">저는 CatFFather 입니다!</p>
-                <p class="home__title__sub">개발이 행복한 Front-end 개발자 입니다.</p>
-                <p class="home__btn btn__border" data-id="contact">CONTACT ME!</p>
+      <!-- 시작 (나를 가장 잘 나타낼 수 있는, 강조할 수 있는 문장을 생각해보자)-->
+      <section id="home" class="home">
+        <div class="home__container">
+          <img class="home__img" src="./imgs/main.png" />
+          <p class="home__title">안녕하세요!</p>
+          <p class="home__title">저는 CatFFather 입니다!</p>
+          <p class="home__title__sub">개발이 행복한 Front-end 개발자 입니다.</p>
+          <p class="home__btn btn__border" data-id="contact">CONTACT ME!</p>
+        </div>
+      </section>
+      <!-- 자기소개 -->
+      <section id="about" class="about">
+        <div class="about__container">
+          <p class="title">About me</p>
+          <p class="about__contents">
+            &nbsp;저는 천재 개발자는 아닙니다. 하지만 성실한 개발자라고 당당하게
+            말할 수 있습니다.
+          </p>
+          <p class="about__contents">
+            저는 저의 제일 큰 무기는 제가 운영하는 저 만의 기술 블로그라고
+            생각합니다.<br />
+            항상 누군가가 피드백을 해주면 좋겠지만 그럴 수 있는 환경이 아닐 때
+            저는 항상 제 자신에게 채찍질 할 수 있는 용도로 블로그를
+            작성하였습니다. 그 결과 발생한 오류의 정답이 떠오르지 않을 때 제
+            블로그에서 검색하면 검색 시간을 줄일 수 있습니다. <br />
+            또한, 블로그를 작성하며 셀프 코드 리뷰를 하며 코드를 리팩토링하는
+            시간을 가질 수 있습니다.
+          </p>
+          <p class="about__contents">
+            &nbsp;저는 6개월의 국비교육을 통해 개발자에 입문 하였습니다. 그리고
+            x년차 개발자로 일을 하고있습니다. 항상 새로운것을 배우고 개발하는
+            것에 대해 행복함을 느끼며 살아가고 있습니다.
+          </p>
+          <div class="about__mySkills__wrap">
+            <div class="about__mySkill">
+              <div class="about__icon"><i class="fab fa-html5"></i></div>
+              <h2 class="about__mySkill__title">Basics</h2>
+              <p class="about__mySkill__info">HTML, CSS, JavaScript, jQuery</p>
             </div>
-        </section>
-        <!-- 자기소개 -->
-        <section id='about' class="about">
-            <div class="about__container">
-                <p class="title">About me</p>
-                <p class="about__contents">
-                    &nbsp;저는 천재 개발자는 아닙니다. 하지만 성실한 개발자라고 당당하게 말할 수 있습니다.
-                </p>
-                <p class="about__contents">
-                    저는 저의 제일 큰 무기는 제가 운영하는 저 만의 기술 블로그라고 생각합니다.<br/>
-                    항상 누군가가 피드백을 해주면 좋겠지만 그럴 수 있는 환경이 아닐 때 
-                    저는 항상 제 자신에게 채찍질 할 수 있는 용도로 블로그를 작성하였습니다.
-                    그 결과 발생한 오류의 정답이 떠오르지 않을 때 제 블로그에서 검색하면 검색 시간을 줄일 수 있습니다. <br/>
-                    또한, 블로그를 작성하며 셀프 코드 리뷰를 하며 코드를 리팩토링하는 시간을 가질 수 있습니다.
-                </p>
-                <p class="about__contents">
-                    &nbsp;저는 6개월의 국비교육을 통해 개발자에 입문 하였습니다.
-                    그리고 x년차 개발자로 일을 하고있습니다. 항상 새로운것을 배우고 개발하는 것에 대해 행복함을 느끼며 살아가고 있습니다.
-                </p>
-                <div class="about__mySkills__wrap">
-                    <div class="about__mySkill">
-                        <div class="about__icon"><i class="fab fa-html5 "></i></div>
-                        <h2 class="about__mySkill__title">Basics</h2>
-                        <p class="about__mySkill__info">HTML, CSS, JavaScript</p>
-                    </div>
-                    <div class="about__mySkill">
-                        <div class="about__icon"><i class="fab fa-react "></i></div>
-                        <h2 class="about__mySkill__title">React</h2>
-                        <p class="about__mySkill__info">프로젝트 경험 있음</p>
-                    </div>
-                    <div class="about__mySkill">
-                        <div class="about__icon"><i class="fab fa-vuejs "></i></div>
-                        <h2 class="about__mySkill__title">Vue.js</h2>
-                        <p class="about__mySkill__info">프로젝트 경험 있음</p>
-                    </div>
-                </div>
-                <!-- 저장된 json파일을 js를 이용하여 careers 목록을 가지고옴 -->
-                <div class="about__careers">
-                    
-                </div>
+            <div class="about__mySkill">
+              <div class="about__icon"><i class="fab fa-react"></i></div>
+              <h2 class="about__mySkill__title">React</h2>
+              <p class="about__mySkill__info">프로젝트 경험 있음</p>
             </div>
-
-        </section>
-        <!-- 기술 -->
-        <section id='skills' class="skills">
-            <div class="skills__container">
-                <p class="title">Skills</p>
-                <p class="skills__contents">누구보다 성장에 대한 열망이 큽니다. 
-                    어떤 기술이라도 새로 배울 수 있는 기회만 있다면 배우고 적용시켜보고 싶습니다. 
-                    지금은 Front-end 개발을 하고 있지만 side project를 통해 Back-end 기술도 배우고 있습니다.<br/>
-                    또한, 팀 단위 프로젝트를 경험해 보았기 때문에 팀 단위 프로젝트를 무리 없이 수행할 수 있고 팀워크가 얼마나 중요한지 인지하고 있습니다.
-                </p>
-                <div class="skills__wrap">
-                    <!-- 저장된 json파일을 js를 이용하여 skills, tools 목록을 가지고옴 -->
-                    <div class="skills__skills">
-                        <div class="skills__title">Skills</div>
-                    </div>
-                    <div class="skills__tools">
-                        <div class="skills__tools--tool">
-                            <div class="skills__title">Tools</div>
-                        </div>
-                        <div class="skills__tools--etc">
-                            <div class="skills__title">Etc</div>
-                        </div>
-                    </div>
-                </div>
+            <div class="about__mySkill">
+              <div class="about__icon"><i class="fab fa-vuejs"></i></div>
+              <h2 class="about__mySkill__title">Vue.js</h2>
+              <p class="about__mySkill__info">프로젝트 경험 있음</p>
             </div>
-
-        </section>
-        <!-- 프로젝트 -->
-        <section id='project' class="project">
-            <div class="project__container">
-                <p class="title">Project</p>
-                <!-- badge 카운팅 getProjectList 함수 이용하여 받아오기 -->
-                <ul class="project__btn_list">
-                    <li class="project__btn_item selected" data-param=''>All <span class="project__btn_badge" data-param=''><!-- badgeCount--></span></li>
-                    <li class="project__btn_item" data-param='Study'>Study <span class="project__btn_badge" data-param='Study'><!-- badgeCount--></span></li>
-                    <li class="project__btn_item" data-param='Business'>Business <span class="project__btn_badge" data-param='Business'><!-- badgeCount--></span></li>
-                </ul>
-                <!-- 프로젝트 리스트 json 데이터 받아오기 -->
-                <ul class="project__list">
-                </ul>     
+          </div>
+          <!-- 저장된 json파일을 js를 이용하여 careers 목록을 가지고옴 -->
+          <div class="about__careers"></div>
+        </div>
+      </section>
+      <!-- 기술 -->
+      <section id="skills" class="skills">
+        <div class="skills__container">
+          <p class="title">Skills</p>
+          <p class="skills__contents">
+            누구보다 성장에 대한 열망이 큽니다. 어떤 기술이라도 새로 배울 수
+            있는 기회만 있다면 배우고 적용시켜보고 싶습니다. 지금은 Front-end
+            개발을 하고 있지만 side project를 통해 Back-end 기술도 배우고
+            있습니다.<br />
+            또한, 팀 단위 프로젝트를 경험해 보았기 때문에 팀 단위 프로젝트를
+            무리 없이 수행할 수 있고 팀워크가 얼마나 중요한지 인지하고 있습니다.
+          </p>
+          <div class="skills__wrap">
+            <!-- 저장된 json파일을 js를 이용하여 skills, tools 목록을 가지고옴 -->
+            <div class="skills__skills">
+              <div class="skills__title">Skills</div>
             </div>
-        </section>
-        <!-- 추천서 -->
-        <section id="testimonial" class="testimonial"> 
-            <p class="title">Testimonial</p>
-        </section>
-        <!-- 연락처 -->
-        <section id='contact' class="contact">
-            <p class="contact__title">Feel free to contact me!</p>
-            <h2 class="contact__email">jh2000le@gmail.com</h2>
-            <div class="contact__icon__wrap">
-                <a href="https://github.com/CatFFather"><i class="fab fa-github contact__icon"></i></a>
-                <a href="https://github.com/leejaehong2"><i class="fab fa-gitlab contact__icon"></i></a>
-                <a href="https://blog.naver.com/dlwoghddldi"><i class="fab fa-blogger  contact__icon"></i></a>
+            <div class="skills__tools">
+              <div class="skills__tools--tool">
+                <div class="skills__title">Tools</div>
+              </div>
+              <div class="skills__tools--etc">
+                <div class="skills__title">Etc</div>
+              </div>
             </div>
-            <p class="contact__thank">함께 성장하고 싶습니다. <br/>감사합니다.</p>
-        </section>
+          </div>
+        </div>
+      </section>
+      <!-- 프로젝트 -->
+      <section id="project" class="project">
+        <div class="project__container">
+          <p class="title">Project</p>
+          <!-- badge 카운팅 getProjectList 함수 이용하여 받아오기 -->
+          <ul class="project__btn_list">
+            <li class="project__btn_item selected" data-param="">
+              All
+              <span class="project__btn_badge" data-param=""
+                ><!-- badgeCount--></span
+              >
+            </li>
+            <li class="project__btn_item" data-param="Study">
+              Study
+              <span class="project__btn_badge" data-param="Study"
+                ><!-- badgeCount--></span
+              >
+            </li>
+            <li class="project__btn_item" data-param="Business">
+              Business
+              <span class="project__btn_badge" data-param="Business"
+                ><!-- badgeCount--></span
+              >
+            </li>
+          </ul>
+          <!-- 프로젝트 리스트 json 데이터 받아오기 -->
+          <ul class="project__list"></ul>
+        </div>
+      </section>
+      <!-- 추천서 -->
+      <section id="testimonial" class="testimonial">
+        <p class="title">Testimonial</p>
+      </section>
+      <!-- 연락처 -->
+      <section id="contact" class="contact">
+        <p class="contact__title">Feel free to contact me!</p>
+        <h2 class="contact__email">jh2000le@gmail.com</h2>
+        <div class="contact__icon__wrap">
+          <a href="https://github.com/CatFFather"
+            ><i class="fab fa-github contact__icon"></i
+          ></a>
+          <a href="https://github.com/leejaehong2"
+            ><i class="fab fa-gitlab contact__icon"></i
+          ></a>
+          <a href="https://blog.naver.com/dlwoghddldi"
+            ><i class="fab fa-blogger contact__icon"></i
+          ></a>
+        </div>
+        <p class="contact__thank">함께 성장하고 싶습니다. <br />감사합니다.</p>
+      </section>
     </main>
-</body>
+  </body>
 </html>
