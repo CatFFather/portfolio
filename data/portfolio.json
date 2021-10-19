@@ -34,6 +34,20 @@
   "project": [
     {
       "type": "Study",
+      "name": "REACT 유튜브 클론코딩",
+      "info": "React, youtubeAPI를 이용한 유튜브 클론코딩",
+      "img": "./imgs/유튜브클론React.png",
+      "href": "https://github.com/CatFFather/YouTubeReact"
+    },
+    {
+      "type": "Business",
+      "name": "인슈어파츠-보험사",
+      "info": "React, REST API를 이용한 외주 프로젝트 진행",
+      "img": "./imgs/인슈어파츠React.png",
+      "href": "https://github.com/CatFFather"
+    },
+    {
+      "type": "Study",
       "name": "포트폴리오",
       "info": "HTML/CSS/JS/JSON을 이용한 포트폴리오 페이지 제작",
       "img": "./imgs/portfolio.png",
@@ -42,7 +56,7 @@
     {
       "type": "Study",
       "name": "유튜브 클론코딩",
-      "info": "HTML/CSS/JS를 이용한 유튜브 페이지 제작",
+      "info": "HTML/CSS/JS를 이용한 유튜브 페이지 제작(기초)",
       "img": "./imgs/유튜브클론basics.png",
       "href": "https://github.com/CatFFather/YouTubeClone"
     },
@@ -61,14 +75,14 @@
       "href": "https://blog.naver.com/dlwoghddldi/222285357050"
     },
     {
-      "type": "Business",
+      "type": "Study",
       "name": "HIT뮤직",
       "info": "JSP/oracle DB를 이용한 음원사이트 구현",
       "img": "./imgs/HIT뮤직spring.png",
       "href": "https://blog.naver.com/dlwoghddldi/222052617142"
     },
     {
-      "type": "Business",
+      "type": "Study",
       "name": "까까요헤어샵",
       "info": "JSP/oracle DB를 이용한 까까요헤어샵 구현",
       "img": "./imgs/까까요헤어샵spring.png",
