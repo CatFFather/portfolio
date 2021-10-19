@@ -453,6 +453,12 @@ main .title {
 }
 .project_item_info h3 {
   color: #feac3e;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.project_item_info p {
+  margin-right: 7px;
+  margin-left: 7px;
 }
 .project_item_info:hover {
   opacity: 0.8;
